@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
-  <body>
     <body bgcolor= "black">
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1280 height=720></canvas>
@@ -16,6 +15,12 @@
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
+      </div>
+      <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Rotar</div>
       </div>
     </div>
     <script>
@@ -49,11 +54,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/buil.C.loader.js";
+      var loaderUrl = buildUrl + "/BUIL 3.loader.js";
       var config = {
-        dataUrl: buildUrl + "/buil.C.data",
-        frameworkUrl: buildUrl + "/buil.C.framework.js",
-        codeUrl: buildUrl + "/buil.C.wasm",
+        dataUrl: buildUrl + "/BUIL 3.data",
+        frameworkUrl: buildUrl + "/BUIL 3.framework.js",
+        codeUrl: buildUrl + "/BUIL 3.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Rotar",
